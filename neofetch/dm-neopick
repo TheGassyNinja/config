@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+neocon="$HOME/.config/neofetch/config.conf"
+
+declare -a options=(
+"axyl  - $HOME/.config/neofetch/axylfetch.conf"
+"block - $HOME/.config/neofetch/blockfetch.conf"
+"boxes - $HOME/.config/neofetch/boxes.conf"
+"hybrid- $HOME/.config/neofetch/hybrid.conf"
+"idli  - $HOME/.config/neofetch/idlifetch.conf"
+"long  - $HOME/.config/neofetch/long.conf"
+"onre  - $HOME/.config/neofetch/onrefetch.conf"
+"pac   - $HOME/.config/neofetch/pacman.conf"
+"sm-2  - $HOME/.config/neofetch/sm-2.conf"
+"Esc"
+)
+
+choice=$(printf '%s\n' "${options[@]}" | dmenu -i -l 10 -p 'MV Fetch:')
+
+if [[ "$choice" == "Esc" ]]; then
+	echo "End of line" && exit 1
+
+elif [ "$choice" ]; then
+	cfg=$(printf '%s\n' "${choice}" | awk '{print $NF}')
+	cp $cfg $neocon
+else
+	echo "End of line"
+fi
+
+

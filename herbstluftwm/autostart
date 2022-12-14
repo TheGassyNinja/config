@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+# The Gassy Ninja (Herbstluftwm)
+hc() {
+    herbstclient "$@"
+}
+hc emit_hook reload
+
+# Env Vars
+TERMINAL=alacritty
+
+# Auto-Start
+#./home/thegassyninja/.config/herbstluftwm/panel.sh
+~/.config/polybar/poly-launch.sh
+~/.fehbg &
+picom --config ~/.config/picom.conf --animations --animation-for-open-window fly-in &
+easyeffects --gapplication-service &
+xset s off -dpms
+
+
+#
+hc keyunbind --all
+source $HOME/.config/herbstluftwm/keys
+
+source $HOME/.config/herbstluftwm/theme
+
+source $HOME/.config/herbstluftwm/rules
+
+hc unlock
+hc detect_monitors
+
+# find the panel
+#panel=~/.config/herbstluftwm/panel.sh
+#[ -x "$panel" ] || panel=/etc/xdg/herbstluftwm/panel.sh
+#for monitor in $(hc list_monitors | cut -d: -f1) ; do
+#   # start it on each monitor
+#    "$panel" "$monitor" &
+#done
