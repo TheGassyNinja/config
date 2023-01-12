@@ -1,0 +1,326 @@
+
+[bar/Launcher]
+width = 3%
+height = 24pt
+offset-x = 0%
+radius = 12
+
+
+; dpi = 96
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3pt
+
+border-size = 4pt
+border-color = #00000000
+
+padding-left = 0
+padding-right = 2
+
+module-margin = 3
+
+separator = |
+separator-foreground = ${colors.disabled}
+
+font-0 = FiraCode NerdFont:size=20;2
+font-1 = Font Awesome 5 Free:Style=Regular:Pixelsize=8;1
+
+
+modules-left = Launcher
+modules-center =
+modules-right =
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+enable-ipc = true
+
+; tray-position = right
+
+; wm-restack = generic
+; wm-restack = bspwm
+; wm-restack = i3
+
+; override-redirect = true
+
+[bar/Xwork]
+width = 19%
+height = 24pt
+offset-x = 3%
+radius = 12
+
+
+; dpi = 96
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3pt
+
+border-size = 4pt
+border-color = #00000000
+
+padding-left = 0
+padding-right = 2
+
+module-margin = 3
+
+separator = |
+separator-foreground = ${colors.disabled}
+
+font-0 = FiraCode NerdFont:size=15;2
+font-1 = Font Awesome 5 Free:Style=Regular:Pixelsize=8;1
+
+
+modules-left =
+modules-center = xworkspaces
+modules-right =
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+enable-ipc = true
+
+; tray-position = right
+
+; wm-restack = generic
+; wm-restack = bspwm
+; wm-restack = i3
+
+; override-redirect = true
+
+
+[bar/Script-3]
+width = 3%
+height = 24pt
+offset-x = 22%
+radius = 12
+
+
+; dpi = 96
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3pt
+
+border-size = 4pt
+border-color = #00000000
+
+padding-left = 0
+padding-right = 2
+
+module-margin = 3
+
+separator = |
+separator-foreground = ${colors.disabled}
+
+font-0 = FiraCode NerdFont:size=18;2
+font-1 = Font Awesome 5 Free:Style=Regular:Pixelsize=8;1
+
+
+modules-left = Config
+modules-center =
+modules-right =
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+enable-ipc = true
+
+; tray-position = right
+
+; wm-restack = generic
+; wm-restack = bspwm
+; wm-restack = i3
+
+; override-redirect = true
+
+
+
+[bar/Audio]
+width = 50%
+height = 24pt
+offset-x = 25%
+radius = 12
+
+
+; dpi = 96
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3pt
+
+border-size = 4pt
+border-color = #00000000
+
+padding-left = 1
+padding-right = 2
+
+module-margin = 1
+
+;separator = |
+;separator-foreground = ${colors.disabled}
+
+font-0 = FiraCode NerdFont:size=14;2
+font-1 = Font Awesome 5 Free:Style=Regular:Pixelsize=8;1
+
+modules-left = Vol
+modules-center = mpd
+modules-right = mpd2 EQ
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+enable-ipc = true
+
+; tray-position = right
+
+; wm-restack = generic
+; wm-restack = bspwm
+; wm-restack = i3
+
+; override-redirect = true
+
+
+[bar/Scripts]
+width = 15%
+height = 24pt
+offset-x = 75%
+radius = 12
+
+
+; dpi = 96
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3pt
+
+border-size = 4pt
+border-color = #00000000
+
+padding-left = 0
+padding-right = 0
+
+module-margin = 0
+
+; separator = |
+separator-foreground = ${colors.disabled}
+
+font-0 = FiraCode NerdFont:size=13;2
+font-1 = Font Awesome 5 Free:Style=Regular:Pixelsize=8;1
+
+
+modules-left = Music Emacs Term Fire Health Kill File SCRN-SH Wifi
+modules-center =
+modules-right =
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+enable-ipc = true
+
+; tray-position = middle
+
+ wm-restack = generic
+; wm-restack = bspwm
+; wm-restack = i3
+
+; override-redirect = true
+
+[bar/Date]
+width = 7%
+height = 24pt
+offset-x = 90%
+radius = 12
+
+
+; dpi = 96
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3pt
+
+border-size = 4pt
+border-color = #00000000
+
+padding-left = 1
+padding-right = 2
+
+module-margin = 3
+
+separator = |
+separator-foreground = ${colors.disabled}
+
+font-0 = FiraCode NerdFont:size=18;2
+font-1 = Font Awesome 5 Free:Style=Regular:Pixelsize=8;1
+
+
+modules-left =
+modules-center = date
+modules-right =
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+enable-ipc = true
+
+; tray-position = right
+
+; wm-restack = generic
+; wm-restack = bspwm
+; wm-restack = i3
+
+; override-redirect = true
+
+
+[bar/Power]
+width = 3%
+height = 24pt
+offset-x = 97%
+radius = 12
+
+
+; dpi = 96
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3pt
+
+border-size = 4pt
+border-color = #00000000
+
+padding-left = 1
+padding-right = 2
+
+module-margin = 3
+
+separator = |
+separator-foreground = ${colors.disabled}
+
+font-0 = FiraCode NerdFont:size=18;2
+font-1 = Font Awesome 5 Free:Style=Regular:Pixelsize=8;1
+
+
+modules-left =
+modules-center = Power
+modules-right =
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+enable-ipc = true
+
+; tray-position = right
+
+; wm-restack = generic
+; wm-restack = bspwm
+; wm-restack = i3
+
+; override-redirect = true

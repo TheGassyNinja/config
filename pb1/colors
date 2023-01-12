@@ -1,0 +1,11 @@
+
+[colors]
+RAND="#$( openssl rand -hex 3 )"
+random = $RAND
+background = #002b36
+background-alt = #002d36
+foreground = #93a1a1
+primary = #268bd2
+secondary = #2aa198
+alert = #A54242
+disabled = #707880
